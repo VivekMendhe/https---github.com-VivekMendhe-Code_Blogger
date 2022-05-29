@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <div class=" mt-1 sticky-top fixed-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-nav rounded sticky-top fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Code_Blogger</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Front End</a></li>
+                                <li><a class="dropdown-item" href="#">Back End</a></li>
+                                <li><a class="dropdown-item" href="#">Frameworks</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Programming Languages</a></li>
+                                <li><a class="dropdown-item" href="#">Java Technologies</a></li>
+                                <li><a class="dropdown-item" href="#">Python Technologies</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- End of Navbar -->
+
+
+    <!-- Main Body -->
+
+    <div class="container-fluid mt-2">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-nav rounded">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">iBlog</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light align-middle px-0">
+                                <i class="fas fa-home"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-light px-0 align-middle">
+                                <i class="fas fa-columns"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">Setting</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-light px-0 align-middle">
+                                <i class="fas fa-blog"></i> <span class="ms-1 d-none d-sm-inline">Blog</span></a>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link text-light px-0 align-middle ">
+                                <i class="fab fa-discourse"></i> <span class="ms-1 d-none d-sm-inline">Courses</span></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">Python</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">Java</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link text-light px-0 align-middle">
+                                <i class="fas fa-laptop-code"></i> <span class="ms-1 d-none d-sm-inline">
+                                    Languages</span> </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">Backend</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">Frontend</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">HTML:
+                                            5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">CSS
+                                            3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-light px-0"> <span class="d-none d-sm-inline">Bootstrap5</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-light px-0 align-middle">
+                                <i class="fas fa-project-diagram"></i> <span class="ms-1 d-none d-sm-inline">Projects</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/profile.jpg" alt="profile image" width="30" height="30" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1">thecodeditz</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">Projects</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3">
+                <!-- Content area... -->
+                <!-- Carousel -->
+                <div class="container">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="img/c1.jpeg" class="d-block w-100" alt="..." height="450rem">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/c2.jpg" class="d-block w-100" alt="..." height="450rem">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/c3.jpg" class="d-block w-100" alt="..." height="450rem">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/c3.jpg" class="d-block w-100" alt="..." height="450rem">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Card 1 -->
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Python</h5>
+                                    <p class="card-text">Learn Python Programming Language
+                                    </p>
+                                    <a href="#" class="btn btn-primary text-center">Learn Python</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">JavaScript</h5>
+                                    <p class="card-text">Learn JavaScript Programming Language
+                                    </p>
+                                    <a href="#" class="btn btn-primary text-center">Learn JavaScript</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+                <!-- HTML Card  2 -->
+
+
+                <div class="container mt-2">
+                    <div class="card bg-dark text-light">
+                        <div class="cardbody">
+                            <!-- <h1>Hello world</h1> -->
+
+                            <!-- 1st Img & Card -->
+
+                            <div class="row m-5">
+                                <div class="col-md-6 text-center mt-4 ">
+                                    <h1 class="card-title">Python</h1>
+                                    <p class="card-text">A popular programming language</p>
+                                    <a href="#" class="btn btn-primary">Learn Python</a>
+
+                                </div>
+                                <div class="col-md-6 text-center">
+
+                                    <!-- Python Template -->
+                                    <div class="card text-start text-dark">
+                                        <div class="card-header text-black-50">
+                                            Python
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">if 5 > 2:</p>
+                                            <p>print("Five is greater than two!")</p>
+
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- End of Python Template -->
+
+
+
+                                </div>
+
+                            </div>
+
+                            <!-- End of Img & Card -->
+
+                            <!-- 2nd Img & Card -->
+
+                            <div class="row m-5 ">
+                                <div class="col-md-6 text-center">
+
+                                    <!-- Python Template -->
+                                    <div class="card text-start text-dark">
+                                        <div class="card-header text-black-50">
+                                            JavaScript
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                alert('Done')
+                                            </p>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <a href="#" class="btn btn-primary">Learn JavaScript</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <h1 class="card-title">JavaScript</h1>
+                                    <p class="card-text">The language for programming web pages</p>
+                                    <a href="#" class="btn btn-primary">Learn Python</a>
+
+                                </div>
+                                <!-- End of Python Template -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of HTML Card -->
+
+                <!-- Card 3 -->
+                <div class="container mt-2">
+                    <!-- 1st Horizontal Img and Card -->
+                    <div class="card mb-3 text-center">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/profile.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 2nd Img and Card -->
+
+                    <!-- 2nd Horizontal Img and Card -->
+                    <div class="card mb-3 text-center">
+                        <div class="row g-0">
+
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/profile.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End of 2nd Img and Card -->
+                </div>
+                <!-- End of Card 3 -->
+
+                <div class="container">
+                    <div class="card bg-nav">
+
+                        <div class="row">
+                            <div class="col-md-8 offset-2">
+
+
+                                <!-- Form -->
+
+                                <form class="row g-3 needs-validation m-2" novalidate>
+                                    <div class="col-md-4">
+                                        <label for="validationCustom01" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustom02" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustomUsername" class="form-label">Username</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom03" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom04" class="form-label">State</label>
+                                        <select class="form-select" id="validationCustom04" required>
+                                            <option selected disabled value="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a valid state.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom05" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="validationCustom05" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                            <label class="form-check-label" for="invalidCheck">
+                                                Agree to terms and conditions
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree before submitting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-outline-success text-light" type="submit">Submit
+                                            form</button>
+                                    </div>
+                                </form>
+                                <!-- End of Form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End of Main Body -->
+
+    <!-- Footer -->
+    <div class=" mt-2">
+        <footer class="text-center text-lg-start bg-nav rounded text-light">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span><b>Get connected with us on social networks:</b></span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>The Code Editz!
+                            </h6>
+                            <p>
+                                We can provide good content for beginners.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Courses
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Angular</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Java</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Python</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Bootstrap</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Contact
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i> India, MH Gondia</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i> thecodeditz@google.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> instaID</p>
+                            <p><i class="fas fa-print me-3"></i> youtubeID</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="#">thecodeditz.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <!-- Footer -->
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

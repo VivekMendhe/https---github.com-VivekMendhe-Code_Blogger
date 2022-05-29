@@ -1,0 +1,7 @@
+Bootstrap%: https://getbootstrap.com/
+
+Materialize for colors: https://materializecss.com/color.html
+
+MDB for Footer: https://mdbootstrap.com/docs/standard/navigation/footer/
+
+DEV for Side Bar: https://dev.to/codeply/bootstrap-5-sidebar-examples-38pb
